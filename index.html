@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porky Porky - Premium Pork Dishes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+           
+            <div class="nav-center">
+                <img src="porky.jpeg" alt="Porky Porky Logo" class="nav-logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <!-- Cart Icon -->
+            <div class="cart-icon-container">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count-badge" id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <video class="hero-bg-video" autoplay loop muted playsinline>
+            <source src="vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h2>Welcome to Porky Porky</h2>
+            <p>Experience the finest pork dishes in town</p>
+            <a href="#menu" class="cta-button">View Menu</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="pig-animation">
+            <i class="fas fa-piggy-bank"></i>
+        </div>
+        <h2>Our Specialties</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/bazouka-burger.jpg" alt="Bazouka Burger">
+                <h3>Bazouka Burger</h3>
+                <p>Juicy pork patty, crispy bacon, and golden fries in a fresh bun</p>
+                <span class="price">$12.99</span>
+                <button class="add-to-cart-btn" data-name="Bazouka Burger" data-price="12.99">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/mix-platter.jpg" alt="Mix Platter">
+                <h3>Mix Platter</h3>
+                <p>Succulent chicken wings and crispy fries with our special sauce</p>
+                <span class="price">$15.99</span>
+                <button class="add-to-cart-btn" data-name="Mix Platter" data-price="15.99">Add to Cart</button>
+            </div>
+            <!-- Hidden extra menu items -->
+            <div class="menu-item extra-menu-item" style="display:none;">
+                <img src="images/pulled-pork-sandwich.jpg" alt="Pulled Pork Sandwich">
+                <h3>Pulled Pork Sandwich</h3>
+                <p>Tender pulled pork, tangy BBQ sauce, and coleslaw in a toasted bun</p>
+                <span class="price">$10.99</span>
+                <button class="add-to-cart-btn" data-name="Pulled Pork Sandwich" data-price="10.99">Add to Cart</button>
+            </div>
+            <div class="menu-item extra-menu-item" style="display:none;">
+                <img src="images/pork-ribs.jpg" alt="BBQ Pork Ribs">
+                <h3>BBQ Pork Ribs</h3>
+                <p>Slow-cooked pork ribs glazed with our signature BBQ sauce</p>
+                <span class="price">$18.99</span>
+                <button class="add-to-cart-btn" data-name="BBQ Pork Ribs" data-price="18.99">Add to Cart</button>
+            </div>
+            <div class="menu-item extra-menu-item" style="display:none;">
+                <img src="images/pork-belly-bites.jpg" alt="Pork Belly Bites">
+                <h3>Pork Belly Bites</h3>
+                <p>Crispy pork belly cubes served with spicy dipping sauce</p>
+                <span class="price">$8.99</span>
+                <button class="add-to-cart-btn" data-name="Pork Belly Bites" data-price="8.99">Add to Cart</button>
+            </div>
+            <div class="menu-item extra-menu-item" style="display:none;">
+                <img src="images/spicy-pork-tacos.jpg" alt="Spicy Pork Tacos">
+                <h3>Spicy Pork Tacos</h3>
+                <p>Soft tortillas filled with spicy pork, fresh salsa, and lime</p>
+                <span class="price">$9.99</span>
+                <button class="add-to-cart-btn" data-name="Spicy Pork Tacos" data-price="9.99">Add to Cart</button>
+            </div>
+        </div>
+        <div class="menu-more-btn-container">
+            <button id="menu-more-btn" class="menu-more-btn">More</button>
+        </div>
+
+        <!-- Cart Modal -->
+        <div id="cart-modal" class="cart-modal">
+            <div class="cart-modal-content">
+                <span class="cart-modal-close" id="cart-modal-close">&times;</span>
+                <h2>Your Order</h2>
+                <div id="cart-items-list"></div>
+                <div class="cart-modal-total">
+                    <span>Total:</span> <span id="cart-total">$0.00</span>
+                </div>
+                <button id="cart-checkout-btn" class="cart-checkout-btn">Checkout via WhatsApp</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-animation">
+            <div class="animation-circle"></div>
+            <div class="animation-circle"></div>
+            <div class="animation-circle"></div>
+        </div>
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>At Porky Porky, we're passionate about serving the finest pork dishes. Our commitment to quality and taste sets us apart in the fast-food industry. We source only the highest quality pork from local farms, ensuring that every bite is packed with flavor and freshness.</p>
+            <p>Our journey began with a simple mission: to revolutionize the way people experience pork dishes. Today, we're proud to serve our community with innovative recipes that combine traditional cooking methods with modern culinary techniques. Our chefs are dedicated to creating memorable dining experiences, one delicious dish at a time.</p>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Years of Excellence</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Happy Customers Daily</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Signature Dishes</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2155710122!2d-73.987844924187!3d40.757988971389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="contact-info-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-text">
+                            <h3>Address</h3>
+                            <p>123 Pork Street, Food City</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>info@porkyporky.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="contact-text">
+                            <h3>Opening Hours</h3>
+                            <p>Mon-Sun: 10:00 AM - 10:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Customer Reviews Display Section -->
+    <section class="customer-reviews-section">
+        <h2 class="customer-reviews-title">What Our Customers Say</h2>
+        <p class="customer-reviews-subtitle">Don't just take our word for it</p>
+        <div class="customer-reviews-cards">
+            <div class="review-card">
+                <div class="review-stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <blockquote>
+                    "The Bazouka Burger is absolutely amazing! Juicy, flavorful, and perfectly cooked. This place is a hidden gem in Flic en Flac!"
+                </blockquote>
+                <div class="reviewer">- <span>Sarah T.</span></div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <blockquote>
+                    "The Mix Platter is perfect for sharing! The chicken wings are crispy on the outside and juicy on the inside. Will definitely be back!"
+                </blockquote>
+                <div class="reviewer">- <span>Michael R.</span></div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <blockquote>
+                    "The owner is so friendly and welcoming! The food is delicious and the atmosphere is great. A must-visit when you're in Flic en Flac."
+                </blockquote>
+                <div class="reviewer">- <span>David L.</span></div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-order-section">
+        <h2 class="cta-order-title">Ready to Order?</h2>
+        <p class="cta-order-subtitle">Contact us via WhatsApp or visit us in Flic en Flac</p>
+        <div class="cta-order-buttons">
+            <a href="tel:5551234567" class="cta-btn cta-btn-call"><i class="fas fa-phone"></i> Call Now</a>
+            <a href="https://goo.gl/maps/xyz" target="_blank" class="cta-btn cta-btn-directions"><i class="fas fa-map-marker-alt"></i> Get Directions</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 Porky Porky. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
