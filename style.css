@@ -742,20 +742,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .nav-links {
-        position: absolute;
-        right: 0;
-        height: 92vh;
-        top: 8vh;
-        background-color: var(--secondary-black);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
-
+    
     .nav-links li {
         margin: 2rem 0;
         opacity: 0;
