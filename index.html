@@ -49,9 +49,8 @@
         <div class="pig-animation">
             <i class="fas fa-piggy-bank"></i>
         </div>
-        <h2>Our Specialties</h2>
+          <h2>Our Specialties</h2>
         <div class="menu-items">
-            <div class="menu-items">
             <div class="menu-item">
                 <img src="burgers.jpg" alt="Bazouka Burger">
                 <h3>Bazouka Burger</h3>
@@ -94,6 +93,22 @@
                 <p>Soft tortillas filled with spicy pork, fresh salsa, and lime</p>
                 <span class="price">$9.99</span>
                 <button class="add-to-cart-btn" data-name="Spicy Pork Tacos" data-price="9.99">Add to Cart</button>
+            </div>
+        </div>
+        <div class="menu-more-btn-container">
+            <button id="menu-more-btn" class="menu-more-btn">More</button>
+        </div>
+
+        <!-- Cart Modal -->
+        <div id="cart-modal" class="cart-modal">
+            <div class="cart-modal-content">
+                <span class="cart-modal-close" id="cart-modal-close">&times;</span>
+                <h2>Your Order</h2>
+                <div id="cart-items-list"></div>
+                <div class="cart-modal-total">
+                    <span>Total:</span> <span id="cart-total">$0.00</span>
+                </div>
+                <button id="cart-checkout-btn" class="cart-checkout-btn">Checkout via WhatsApp</button>
             </div>
         </div>
     </section>
