@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <img src="${item.image}" alt="${item.name}">
                 <h3>${item.name}</h3>
                 <p>${item.details}</p>
-                <span class="price">$${item.price.toFixed(2)}</span>
+                <span class="price">Rs ${item.price.toFixed(2)}</span>
                 <button class="add-to-cart-btn" data-name="${item.name}" data-price="${item.price}">Add to Cart</button>
             `;
             itemsDiv.appendChild(itemDiv);
