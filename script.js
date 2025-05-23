@@ -1,27 +1,27 @@
 // Menu data
 const menu = {
     "Burgers": [
-        { name: "AK-47", price: 8.99, details: "Crispy Pork, Lettuce, Tomato, Cheese, Pineapple, Honey & Mustard, Sweet Chilli, Fries.", image: "images/burgers.jpg" },
-        { name: "TNT", price: 9.99, details: "Burger Pork, Cheese, Egg, Jalapenos, Pickle, Lettuce, Mint Mayo, Hot Sauce, Fries.", image: "images/burgers.jpg" },
-        { name: "Bazouka Burger", price: 12.99, details: "Juicy pork patty, crispy bacon, and golden fries in a fresh bun", image: "images/burgers.jpg" },
-        { name: "Kalash", price: 7.99, details: "Crispy Chicken, Lettuce, Tomato, Cheese, BBQ Sauce, Honey & Mustard, Sweet Chilli, Fries.", image: "images/burgers.jpg" },
-        { name: "Pulled Pork Sandwich", price: 10.99, details: "Tender pulled pork, tangy BBQ sauce, and coleslaw in a toasted bun", image: "images/burgers.jpg" }
+        { name: "AK-47", price: 8.99, details: "Crispy Pork, Lettuce, Tomato, Cheese, Pineapple, Honey & Mustard, Sweet Chilli, Fries.", image: "burgers.jpg" },
+        { name: "TNT", price: 9.99, details: "Burger Pork, Cheese, Egg, Jalapenos, Pickle, Lettuce, Mint Mayo, Hot Sauce, Fries.", image: "burgers.jpg" },
+        { name: "Bazouka Burger", price: 12.99, details: "Juicy pork patty, crispy bacon, and golden fries in a fresh bun", image: "burgers.jpg" },
+        { name: "Kalash", price: 7.99, details: "Crispy Chicken, Lettuce, Tomato, Cheese, BBQ Sauce, Honey & Mustard, Sweet Chilli, Fries.", image: "burgers.jpg" },
+        { name: "Pulled Pork Sandwich", price: 10.99, details: "Tender pulled pork, tangy BBQ sauce, and coleslaw in a toasted bun", image: "burgers.jpg" }
     ],
     "Appetisers": [
-        { name: "Chicken Tenders", price: 5.99, details: "", image: "images/burgers.jpg" },
-        { name: "Buffalo Wings", price: 6.99, details: "", image: "images/burgers.jpg" },
-        { name: "Crispy Wings", price: 6.99, details: "", image: "images/burgers.jpg" },
-        { name: "Steamed Chicken", price: 5.99, details: "As from 200g.", image: "images/burgers.jpg" },
-        { name: "Chassive", price: 5.99, details: "Honey Pork Sausage.", image: "images/burgers.jpg" },
-        { name: "Pork Ribs", price: 8.99, details: "As from 300g.", image: "images/burgers.jpg" },
-        { name: "Crispy Pork Belly", price: 8.99, details: "", image: "images/burgers.jpg" },
-        { name: "BBQ Pork Ribs", price: 18.99, details: "Slow-cooked pork ribs glazed with our signature BBQ sauce", image: "images/burgers.jpg" },
-        { name: "Pork Belly Bites", price: 8.99, details: "Crispy pork belly cubes served with spicy dipping sauce", image: "images/burgers.jpg" }
+        { name: "Chicken Tenders", price: 5.99, details: "", image: "burgers.jpg" },
+        { name: "Buffalo Wings", price: 6.99, details: "", image: "burgers.jpg" },
+        { name: "Crispy Wings", price: 6.99, details: "", image: "burgers.jpg" },
+        { name: "Steamed Chicken", price: 5.99, details: "As from 200g.", image: "burgers.jpg" },
+        { name: "Chassive", price: 5.99, details: "Honey Pork Sausage.", image: "burgers.jpg" },
+        { name: "Pork Ribs", price: 8.99, details: "As from 300g.", image: "burgers.jpg" },
+        { name: "Crispy Pork Belly", price: 8.99, details: "", image: "burgers.jpg" },
+        { name: "BBQ Pork Ribs", price: 18.99, details: "Slow-cooked pork ribs glazed with our signature BBQ sauce", image: "burgers.jpg" },
+        { name: "Pork Belly Bites", price: 8.99, details: "Crispy pork belly cubes served with spicy dipping sauce", image: "burgers.jpg" }
     ],
     "Mix Platter": [
-        { name: "Chicken Mix Platter", price: 19.99, details: "Chicken Tenders, Buffalo Wings, Crispy Wings & Steamed Chicken.", image: "images/burgers.jpg" },
-        { name: "Pork Mix Platter", price: 22.99, details: "Honey Porc Sausage, Chassive, Pork Ribs & Crispy Belly.", image: "images/burgers.jpg" },
-        { name: "Mix Platter", price: 15.99, details: "Succulent chicken wings and crispy fries with our special sauce", image: "images/burgers.jpg" }
+        { name: "Chicken Mix Platter", price: 19.99, details: "Chicken Tenders, Buffalo Wings, Crispy Wings & Steamed Chicken.", image: "burgers.jpg" },
+        { name: "Pork Mix Platter", price: 22.99, details: "Honey Porc Sausage, Chassive, Pork Ribs & Crispy Belly.", image: "burgers.jpg" },
+        { name: "Mix Platter", price: 15.99, details: "Succulent chicken wings and crispy fries with our special sauce", image: "burgers.jpg" }
     ],
     "Tacos": [
         { name: "Tacos Chicken", price: 5.99, details: "", image: "images/tacos-chicken.jpg" },
