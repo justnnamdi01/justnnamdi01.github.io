@@ -1,11 +1,11 @@
 // Menu data
 const menu = {
     "Burgers": [
-        { name: "AK-47", price: 8.99, details: "Crispy Pork, Lettuce, Tomato, Cheese, Pineapple, Honey & Mustard, Sweet Chilli, Fries.", image: "burgers.jpg" },
-        { name: "TNT", price: 9.99, details: "Burger Pork, Cheese, Egg, Jalapenos, Pickle, Lettuce, Mint Mayo, Hot Sauce, Fries.", image: "burgers.jpg" },
-        { name: "Bazouka Burger", price: 12.99, details: "Juicy pork patty, crispy bacon, and golden fries in a fresh bun", image: "burgers.jpg" },
-        { name: "Kalash", price: 7.99, details: "Crispy Chicken, Lettuce, Tomato, Cheese, BBQ Sauce, Honey & Mustard, Sweet Chilli, Fries.", image: "burgers.jpg" },
-        { name: "Pulled Pork Sandwich", price: 10.99, details: "Tender pulled pork, tangy BBQ sauce, and coleslaw in a toasted bun", image: "burgers.jpg" }
+        { name: "AK-47", price: 8.99, details: "Crispy Pork, Lettuce, Tomato, Cheese, Pineapple, Honey & Mustard, Sweet Chilli, Fries.", image: "crispy.jpg" },
+        { name: "TNT", price: 9.99, details: "Burger Pork, Cheese, Egg, Jalapenos, Pickle, Lettuce, Mint Mayo, Hot Sauce, Fries.", image: "BurgerPork.jpg" },
+        { name: "Bazouka Burger", price: 12.99, details: "Juicy pork patty, crispy bacon, and golden fries in a fresh bun", image: "paa.png" },
+        { name: "Kalash", price: 7.99, details: "Crispy Chicken, Lettuce, Tomato, Cheese, BBQ Sauce, Honey & Mustard, Sweet Chilli, Fries.", image: "cripsycc.jpg" },
+        { name: "Pulled Pork Sandwich", price: 10.99, details: "Tender pulled pork, tangy BBQ sauce, and coleslaw in a toasted bun", image: "pulled.jpg" }
     ],
     "Appetisers": [
         { name: "Chicken Tenders", price: 5.99, details: "", image: "burgers.jpg" },
