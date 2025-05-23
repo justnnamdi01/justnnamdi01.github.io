@@ -49,66 +49,23 @@
         <div class="pig-animation">
             <i class="fas fa-piggy-bank"></i>
         </div>
-          <h2>Our Specialties</h2>
-        <div class="menu-items">
-            <div class="menu-item">
-                <img src="burgers.jpg" alt="Bazouka Burger">
-                <h3>Bazouka Burger</h3>
-                <p>Juicy pork patty, crispy bacon, and golden fries in a fresh bun</p>
-                <span class="price">$12.99</span>
-                <button class="add-to-cart-btn" data-name="Bazouka Burger" data-price="12.99">Add to Cart</button>
-            </div>
-            <div class="menu-item">
-                <img src="mix.png" alt="Mix Platter">
-                <h3>Mix Platter</h3>
-                <p>Succulent chicken wings and crispy fries with our special sauce</p>
-                <span class="price">$15.99</span>
-                <button class="add-to-cart-btn" data-name="Mix Platter" data-price="15.99">Add to Cart</button>
-            </div>
-            <!-- Hidden extra menu items -->
-            <div class="menu-item extra-menu-item" style="display:none;">
-                <img src="brred.jpg" alt="Pulled Pork Sandwich">
-                <h3>Pulled Pork Sandwich</h3>
-                <p>Tender pulled pork, tangy BBQ sauce, and coleslaw in a toasted bun</p>
-                <span class="price">$10.99</span>
-                <button class="add-to-cart-btn" data-name="Pulled Pork Sandwich" data-price="10.99">Add to Cart</button>
-            </div>
-            <div class="menu-item extra-menu-item" style="display:none;">
-                <img src="rib.png" alt="BBQ Pork Ribs">
-                <h3>BBQ Pork Ribs</h3>
-                <p>Slow-cooked pork ribs glazed with our signature BBQ sauce</p>
-                <span class="price">$18.99</span>
-                <button class="add-to-cart-btn" data-name="BBQ Pork Ribs" data-price="18.99">Add to Cart</button>
-            </div>
-            <div class="menu-item extra-menu-item" style="display:none;">
-                <img src="prok.jpg" alt="Pork Belly Bites">
-                <h3>Pork Belly Bites</h3>
-                <p>Crispy pork belly cubes served with spicy dipping sauce</p>
-                <span class="price">$8.99</span>
-                <button class="add-to-cart-btn" data-name="Pork Belly Bites" data-price="8.99">Add to Cart</button>
-            </div>
-            <div class="menu-item extra-menu-item" style="display:none;">
-                <img src="tacos.png" alt="Spicy Pork Tacos">
-                <h3>Spicy Pork Tacos</h3>
-                <p>Soft tortillas filled with spicy pork, fresh salsa, and lime</p>
-                <span class="price">$9.99</span>
-                <button class="add-to-cart-btn" data-name="Spicy Pork Tacos" data-price="9.99">Add to Cart</button>
-            </div>
+        <h2>Our Menu</h2>
+        <div class="menu-tabs">
+            <!-- Tab buttons will be generated here -->
         </div>
-        <div class="menu-more-btn-container">
-            <button id="menu-more-btn" class="menu-more-btn">More</button>
+        <div class="menu-content">
+            <!-- Category content will be generated here -->
         </div>
-
-        <!-- Cart Modal -->
         <div id="cart-modal" class="cart-modal">
             <div class="cart-modal-content">
-                <span class="cart-modal-close" id="cart-modal-close">&times;</span>
+                <span class="cart-modal-close" id="cart-modal-close">×</span>
                 <h2>Your Order</h2>
                 <div id="cart-items-list"></div>
                 <div class="cart-modal-total">
                     <span>Total:</span> <span id="cart-total">$0.00</span>
                 </div>
                 <button id="cart-checkout-btn" class="cart-checkout-btn">Checkout via WhatsApp</button>
+                <button id="continue-ordering-btn" class="continue-ordering-btn">Continue Ordering</button>
             </div>
         </div>
     </section>
@@ -123,6 +80,10 @@
         <div class="about-content">
             <p>At Porky Porky, we're passionate about serving the finest pork dishes. Our commitment to quality and taste sets us apart in the fast-food industry. We source only the highest quality pork from local farms, ensuring that every bite is packed with flavor and freshness.</p>
             <p>Our journey began with a simple mission: to revolutionize the way people experience pork dishes. Today, we're proud to serve our community with innovative recipes that combine traditional cooking methods with modern culinary techniques. Our chefs are dedicated to creating memorable dining experiences, one delicious dish at a time.</p>
+            <figure class="owner-figure">
+                <img src="owb.jpg" alt="Owner of Porky Porky" class="owner-photo">
+                <figcaption>Our Founder</figcaption>
+            </figure>
             <div class="about-stats">
                 <div class="stat-item">
                     <span class="stat-number">10+</span>
@@ -160,7 +121,7 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <div class="contact-text">
                             <h3>Address</h3>
-                            <p>123 Pork Street, Food City</p>
+                            <p> Coastal Road, Flic en Flac</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -189,8 +150,6 @@
         </div>
     </section>
 
-    
-    <!-- Customer Reviews Display Section -->
     <section class="customer-reviews-section">
         <h2 class="customer-reviews-title">What Our Customers Say</h2>
         <p class="customer-reviews-subtitle">Don't just take our word for it</p>
@@ -223,10 +182,8 @@
                 <div class="reviewer">- <span>David L.</span></div>
             </div>
         </div>
-        
     </section>
 
-    <!-- Call to Action Section -->
     <section class="cta-order-section">
         <h2 class="cta-order-title">Ready to Order?</h2>
         <p class="cta-order-subtitle">Contact us via WhatsApp or visit us in Flic en Flac</p>
@@ -242,9 +199,10 @@
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
-        <p>&copy; 2024 Porky Porky. All rights reserved.</p>
+        <p>© 2024 Porky Porky. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </body>
-</html> 
+</html>
