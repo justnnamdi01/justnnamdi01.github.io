@@ -305,6 +305,7 @@ nav {
     color: var(--secondary-black);
     font-size: 1.2rem;
     transition: color 0.3s ease;
+    text-align: center;
 }
 
 .menu-item:hover h3 {
@@ -324,6 +325,7 @@ nav {
     font-weight: bold;
     font-size: 1.1rem;
     transition: color 0.3s ease;
+    text-align: center;
 }
 
 .menu-item:hover .price {
