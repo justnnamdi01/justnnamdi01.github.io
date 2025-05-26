@@ -175,14 +175,14 @@ document.addEventListener('DOMContentLoaded', function() {
     if (checkoutBtn) {
         checkoutBtn.addEventListener('click', function() {
             if (cart.length === 0) return;
-            let orderMsg = 'Order from Porky Porky:%0A';
+            let orderMsg = 'Hello, I would like to place an order:%0A';
             cart.forEach(item => {
                 orderMsg += `${item.name} x${item.qty} - $${(item.price * item.qty).toFixed(2)}%0A`;
             });
             let total = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
             orderMsg += `Total: $${total.toFixed(2)}`;
             const whatsappNumber = '1234567890';
-            const waUrl = `https://wa.me/${whatsappNumber}?text=${orderMsg}`;
+            const waUrl = `https://wa.me/${+230 5711-0755}?text=${orderMsg}`;
             window.open(waUrl, '_blank');
         });
     }
