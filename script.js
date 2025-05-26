@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             let total = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
             orderMsg += `Total: $${total.toFixed(2)}`;
-            const whatsappNumber = '+23057110755';
+            const whatsappNumber = '+23058534502';
             const waUrl = `https://wa.me/${whatsappNumber}?text=${orderMsg}`;
             window.open(waUrl, '_blank');
         });
